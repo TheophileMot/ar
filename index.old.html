@@ -1,10 +1,17 @@
 <html>
+  <head>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
   <body>
     <table>
-      <script
-        type="module"
-        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
-      ></script>
       <tr style="text-align:center">
         <td></td>
         <td>USDZ</td>
@@ -19,24 +26,14 @@
         </td>
         <td>
           <model-viewer
-            ar
             src="./ducky.gltf"
+            background-color="#70BCD1"
             shadow-intensity="1"
             camera-controls
-            poster="icon.jpg"
-          ></model-viewer>
-        </td>
-      </tr>
-      <tr>
-        <td><h2>newducky.</h2></td>
-        <td></td>
-        <td>
-          <model-viewer
+            interaction-prompt="auto"
+            auto-rotate
             ar
-            src="./newducky.gltf"
-            shadow-intensity="1"
-            camera-controls
-            poster="icon.jpg"
+            unstable-webxr
           ></model-viewer>
         </td>
       </tr>
